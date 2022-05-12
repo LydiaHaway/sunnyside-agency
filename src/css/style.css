@@ -124,34 +124,32 @@ body main .solution .text a {
   letter-spacing: 1px;
   margin-left: 160px;
   position: relative;
+  z-index: 1;
 }
-body main .solution .text a.link_yellow::after {
-  content: "";
-  position: absolute;
-  width: 124px;
+body main .solution .text a:hover span {
+  opacity: 1;
+}
+body main .solution .text a .link_yellow {
   height: 5px;
+  width: 128px;
   background-color: rgb(250, 212, 0);
-  opacity: 0.25;
-  bottom: 2px;
-  left: -5px;
-  border-radius: 5px;
-}
-body main .solution .text a.link_yellow:hover::after {
-  opacity: 0.9;
-}
-body main .solution .text a.link_pink::after {
-  content: "";
   position: absolute;
-  width: 124px;
-  height: 5px;
-  background-color: rgb(254, 119, 102);
-  opacity: 0.25;
-  bottom: 2px;
-  left: -5px;
   border-radius: 5px;
+  z-index: -1;
+  bottom: 1px;
+  left: -5px;
+  opacity: 0.25;
 }
-body main .solution .text a.link_pink:hover::after {
-  opacity: 0.9;
+body main .solution .text a .link_pink {
+  height: 5px;
+  width: 128px;
+  background-color: rgb(254, 119, 102);
+  position: absolute;
+  border-radius: 5px;
+  z-index: -1;
+  bottom: 1px;
+  left: -5px;
+  opacity: 0.25;
 }
 body main .design {
   display: grid;

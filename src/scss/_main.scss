@@ -120,23 +120,18 @@ body {
           letter-spacing: 1px;
           margin-left: 160px;
           position: relative;
+          z-index: 1;
 
-          &.link_yellow {
-            &::after {
-              @include link_color($yellow);
-            }
-            &:hover::after {
-              opacity: 0.9;
-            }
+          &:hover span {
+            opacity: 1;
           }
 
-          &.link_pink {
-            &::after {
-              @include link_color($pink);
-            }
-            &:hover::after {
-              opacity: 0.9;
-            }
+          .link_yellow {
+            @include link_color($yellow);
+          }
+
+          .link_pink {
+            @include link_color($pink);
           }
         }
       }
