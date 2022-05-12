@@ -35,7 +35,7 @@ body {
         }
         .menu-contact a {
           color: $black;
-          font-family: "Fraunces", serif;
+          font-family: $fontF;
           font-weight: 700;
           font-size: 15px;
           text-transform: uppercase;
@@ -51,7 +51,7 @@ body {
       }
     }
     h1 {
-      font-family: "Fraunces", serif;
+      font-family: $fontF;
       font-weight: 900;
       font-size: 56px;
       text-transform: uppercase;
@@ -88,8 +88,8 @@ body {
         margin: auto;
 
         h2 {
-          font-family: "Fraunces", serif;
-          font-weight: 900px;
+          font-family: $fontF;
+          font-weight: 900;
           font-size: 40px;
           color: $blue;
           letter-spacing: -0.285714px;
@@ -99,7 +99,7 @@ body {
 
         p {
           font-family: "Barlow", sans-serif;
-          font-weight: 600px;
+          font-weight: 600;
           font-size: 18px;
           color: $grey;
           width: 445px;
@@ -111,8 +111,8 @@ body {
 
         a {
           text-decoration: none;
-          font-family: "Fraunces", serif;
-          font-weight: bold;
+          font-family: $fontF;
+          font-weight: 900;
           font-size: 15px;
           line-height: 25px;
           color: $blue;
@@ -146,10 +146,10 @@ body {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       text-align: center;
-      font-family: "Fraunces", serif;
+      font-family: $fontF;
 
       h2 {
-        font-weight: 900px;
+        font-weight: 900;
         font-size: 28px;
         margin-bottom: 20px;
       }
@@ -189,6 +189,50 @@ body {
         p {
           color: $blueTp;
           margin-bottom: 80px;
+        }
+      }
+    }
+    .testimony {
+      margin-top: 88.5px;
+      margin-bottom: 88.5px;
+      h2 {
+        font-family: $fontF;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 24.66px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $greydark;
+        text-align: center;
+        margin-bottom: 81px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        li {
+          text-align: center;
+          img {
+            margin-bottom: 58px;
+          }
+          .story {
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 32px;
+            color: $greyS;
+            margin-bottom: 69px;
+            width: 350px;
+          }
+          .name {
+            font-family: $fontF;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 22.19px;
+            color: $blue;
+            margin-bottom: 9px;
+          }
         }
       }
     }

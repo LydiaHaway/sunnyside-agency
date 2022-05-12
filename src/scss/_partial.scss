@@ -8,6 +8,10 @@ $bluegrey: rgba(36, 85, 74, 1);
 $bluep: rgba(62, 116, 103, 1);
 $blueT: rgba(5, 44, 59, 1);
 $blueTp: rgba(25, 83, 108, 1);
+$greydark: rgba(167, 170, 173, 1);
+$greyS: rgba(91, 99, 109, 1);
+
+$fontF: "Fraunces", serif;
 
 @mixin link_color($color) {
   content: "";

@@ -95,7 +95,7 @@ body main .solution .text {
 }
 body main .solution .text h2 {
   font-family: "Fraunces", serif;
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 40px;
   color: rgb(36, 48, 62);
   letter-spacing: -0.285714px;
@@ -104,7 +104,7 @@ body main .solution .text h2 {
 }
 body main .solution .text p {
   font-family: "Barlow", sans-serif;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 18px;
   color: #808397;
   width: 445px;
@@ -116,7 +116,7 @@ body main .solution .text p {
 body main .solution .text a {
   text-decoration: none;
   font-family: "Fraunces", serif;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 15px;
   line-height: 25px;
   color: rgb(36, 48, 62);
@@ -161,7 +161,7 @@ body main .design {
   font-family: "Fraunces", serif;
 }
 body main .design h2 {
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 28px;
   margin-bottom: 20px;
 }
@@ -211,4 +211,52 @@ body main .design .fruit_tangerine h2 {
 body main .design .fruit_tangerine p {
   color: rgb(25, 83, 108);
   margin-bottom: 80px;
+}
+body main .testimony {
+  margin-top: 88.5px;
+  margin-bottom: 88.5px;
+}
+body main .testimony h2 {
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24.66px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(167, 170, 173);
+  text-align: center;
+  margin-bottom: 81px;
+}
+body main .testimony ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+body main .testimony ul li {
+  text-align: center;
+}
+body main .testimony ul li img {
+  margin-bottom: 58px;
+}
+body main .testimony ul li .story {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgb(91, 99, 109);
+  margin-bottom: 69px;
+  width: 350px;
+}
+body main .testimony ul li .name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22.19px;
+  color: rgb(36, 48, 62);
+  margin-bottom: 9px;
 }/*# sourceMappingURL=style.css.map */
