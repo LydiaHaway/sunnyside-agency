@@ -1,2 +1,28 @@
 $white: #ffffff;
 $black: black;
+$blue: rgba(36, 48, 62, 1);
+$grey: #808397;
+$yellow: rgba(250, 212, 0, 1);
+$pink: rgba(254, 119, 102, 1);
+$bluegrey: rgba(36, 85, 74, 1);
+$bluep: rgba(62, 116, 103, 1);
+$blueT: rgba(5, 44, 59, 1);
+$blueTp: rgba(25, 83, 108, 1);
+
+@mixin link_color($color) {
+  content: "";
+  position: absolute;
+  width: 124px;
+  height: 5px;
+  background-color: $color;
+  opacity: 0.25;
+  bottom: 2px;
+  left: -5px;
+  border-radius: 5px;
+}
+
+@mixin design {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
