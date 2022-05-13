@@ -85,6 +85,10 @@ body {
       text-align: center;
       margin-top: 70px;
       letter-spacing: 8.75px;
+
+      @media screen and (max-width: 990px) {
+        font-size: 45px;
+      }
     }
     .arrow {
       display: flex;
@@ -101,7 +105,7 @@ body {
         "a b"
         "c d";
 
-      @media screen and (max-width: 870px) {
+      @media screen and (max-width: 990px) {
         grid-template-columns: 1fr;
         grid-template-areas:
           "b"
@@ -128,6 +132,11 @@ body {
         margin: auto;
         height: 700px;
 
+        @media screen and (max-width: 990px) {
+          text-align: center;
+          width: 327px;
+        }
+
         &.text_eggs {
           grid-area: a;
         }
@@ -142,9 +151,14 @@ body {
           font-size: 40px;
           color: $blue;
           letter-spacing: -0.285714px;
-          padding-left: 150px;
-          padding-right: 150px;
+          padding-left: 138px;
+          padding-right: 138px;
           margin-top: 162.5px;
+
+          @media screen and (max-width: 990px) {
+            padding-left: 30px;
+            padding-right: 30px;
+          }
         }
 
         p {
@@ -153,10 +167,15 @@ body {
           font-size: 18px;
           color: $grey;
           max-width: 445px;
-          margin-left: 150px;
+          margin-left: auto;
+          margin-right: auto;
           margin-top: 32px;
           margin-bottom: 50px;
           line-height: 30px;
+          @media screen and (max-width: 990px) {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
         }
 
         a {
@@ -168,10 +187,15 @@ body {
           color: $blue;
           text-transform: uppercase;
           letter-spacing: 1px;
-          margin-left: 160px;
+          margin-left: 135px;
           position: relative;
           z-index: 1;
           margin-bottom: 150px;
+
+          @media screen and (max-width: 990px) {
+            margin-left: auto;
+            margin-right: auto;
+          }
 
           &:hover span {
             opacity: 1;
@@ -194,7 +218,7 @@ body {
       text-align: center;
       font-family: $fontF;
 
-      @media screen and(max-width: 870px) {
+      @media screen and(max-width: 990px) {
         grid-template-columns: 1fr;
       }
 
@@ -205,9 +229,10 @@ body {
       }
 
       p {
-        margin-left: 180.5px;
-        margin-right: 180.5px;
+        max-width: 300px;
         line-height: 27px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .fruit_cherry {
@@ -239,6 +264,10 @@ body {
         p {
           color: $blueTp;
           margin-bottom: 80px;
+
+          @media screen and (max-width: 990px) {
+            margin-bottom: 50px;
+          }
         }
       }
     }
@@ -262,7 +291,7 @@ body {
         justify-content: center;
         gap: 30px;
 
-        @media screen and (max-width: 870px) {
+        @media screen and (max-width: 990px) {
           display: block;
         }
 
@@ -279,7 +308,7 @@ body {
             color: $greyS;
             margin-bottom: 69px;
             max-width: 350px;
-            @media screen and (max-width: 870px) {
+            @media screen and (max-width: 990px) {
               margin-left: auto;
               margin-right: auto;
             }
@@ -325,7 +354,7 @@ body {
         background: url(../../images/Bitmap\(3\).png) center/cover;
       }
 
-      @media screen and (max-width: 870px) {
+      @media screen and (max-width: 920px) {
         grid-template-columns: 1fr 1fr;
       }
     }
