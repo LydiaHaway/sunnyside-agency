@@ -12,7 +12,6 @@ body {
 body header {
   background: url("../../images/mae-mu-1APtYqzNajA-unsplash.png") center/cover;
   height: 800px;
-  width: 1440px;
 }
 body header nav {
   display: -webkit-box;
@@ -31,9 +30,21 @@ body header nav .menu_burger i {
   display: none;
   margin-right: 32px;
 }
+@media screen and (max-width: 870px) {
+  body header nav .menu_burger i {
+    display: inline-block;
+    margin-right: 32px;
+    margin-top: 32px;
+  }
+}
 body header nav img {
   height: 33px;
   padding-left: 30px;
+}
+@media screen and (max-width: 870px) {
+  body header nav img {
+    margin-top: 32px;
+  }
 }
 body header nav ul {
   display: -webkit-box;
@@ -43,6 +54,11 @@ body header nav ul {
   gap: 30px;
   padding: 30px;
   margin: 20px;
+}
+@media (max-width: 870px) {
+  body header nav ul {
+    display: none;
+  }
 }
 body header nav ul li a {
   text-decoration: none;
@@ -88,17 +104,33 @@ body main .solution {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a b" "c d";
+}
+@media screen and (max-width: 870px) {
+  body main .solution {
+    grid-template-columns: 1fr;
+    grid-template-areas: "b" "a" "c" "d";
+  }
 }
 body main .solution .image_eggs {
   background: url(../../images/mae-mu-40NjbC-Q-cw-unsplash.png) center/cover no-repeat;
   height: 700px;
+  grid-area: b;
 }
 body main .solution .image_glass {
   background: url(../../images/mae-mu-GnWKTJlMYsQ-unsplash.png) center/cover no-repeat;
   height: 700px;
+  grid-area: c;
 }
 body main .solution .text {
   margin: auto;
+  height: 700px;
+}
+body main .solution .text.text_eggs {
+  grid-area: a;
+}
+body main .solution .text.text_glass {
+  grid-area: d;
 }
 body main .solution .text h2 {
   font-family: "Fraunces", serif;
@@ -108,13 +140,14 @@ body main .solution .text h2 {
   letter-spacing: -0.285714px;
   padding-left: 150px;
   padding-right: 150px;
+  margin-top: 162.5px;
 }
 body main .solution .text p {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   font-size: 18px;
   color: #808397;
-  width: 445px;
+  max-width: 445px;
   margin-left: 150px;
   margin-top: 32px;
   margin-bottom: 50px;
@@ -132,6 +165,7 @@ body main .solution .text a {
   margin-left: 160px;
   position: relative;
   z-index: 1;
+  margin-bottom: 150px;
 }
 body main .solution .text a:hover span {
   opacity: 1;
@@ -164,6 +198,11 @@ body main .design {
   grid-template-rows: 1fr;
   text-align: center;
   font-family: "Fraunces", serif;
+}
+@media screen and (max-width: 870px) {
+  body main .design {
+    grid-template-columns: 1fr;
+  }
 }
 body main .design h2 {
   font-weight: 900;
@@ -242,6 +281,11 @@ body main .testimony ul {
           justify-content: center;
   gap: 30px;
 }
+@media screen and (max-width: 870px) {
+  body main .testimony ul {
+    display: block;
+  }
+}
 body main .testimony ul li {
   text-align: center;
 }
@@ -255,7 +299,13 @@ body main .testimony ul li .story {
   line-height: 32px;
   color: rgb(91, 99, 109);
   margin-bottom: 69px;
-  width: 350px;
+  max-width: 350px;
+}
+@media screen and (max-width: 870px) {
+  body main .testimony ul li .story {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 body main .testimony ul li .name {
   font-family: "Fraunces", serif;
@@ -277,6 +327,24 @@ body main .testimony ul li .title {
 body main .banner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 500px;
+}
+body main .banner .milk {
+  background: url(../../images/Bitmap.png) center/cover;
+}
+body main .banner .orange {
+  background: url(../../images/Bitmap\(1\).png) center/cover;
+}
+body main .banner .icecream {
+  background: url(../../images/Bitmap\(2\).png) center/cover;
+}
+body main .banner .sugar {
+  background: url(../../images/Bitmap\(3\).png) center/cover;
+}
+@media screen and (max-width: 870px) {
+  body main .banner {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 body footer {
   text-align: center;

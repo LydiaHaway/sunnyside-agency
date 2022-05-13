@@ -11,23 +11,33 @@ body {
   header {
     background: url("../../images/mae-mu-1APtYqzNajA-unsplash.png") center/cover;
     height: 800px;
-    width: 1440px;
 
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       .menu_burger {
         i {
           font-size: 24px;
           color: $white;
           display: none;
           margin-right: 32px;
+
+          @media screen and (max-width: 870px) {
+            display: inline-block;
+            margin-right: 32px;
+            margin-top: 32px;
+          }
         }
       }
       img {
         height: 33px;
         padding-left: 30px;
+
+        @media screen and (max-width: 870px) {
+          margin-top: 32px;
+        }
       }
       ul {
         display: flex;
@@ -35,6 +45,10 @@ body {
         gap: 30px;
         padding: 30px;
         margin: 20px;
+
+        @media (max-width: 870px) {
+          display: none;
+        }
 
         li {
           a {
@@ -83,21 +97,44 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "a b"
+        "c d";
+
+      @media screen and (max-width: 870px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "b"
+          "a"
+          "c"
+          "d";
+      }
 
       .image_eggs {
         background: url(../../images/mae-mu-40NjbC-Q-cw-unsplash.png)
           center/cover no-repeat;
         height: 700px;
+        grid-area: b;
       }
 
       .image_glass {
         background: url(../../images/mae-mu-GnWKTJlMYsQ-unsplash.png)
           center/cover no-repeat;
         height: 700px;
+        grid-area: c;
       }
 
       .text {
         margin: auto;
+        height: 700px;
+
+        &.text_eggs {
+          grid-area: a;
+        }
+
+        &.text_glass {
+          grid-area: d;
+        }
 
         h2 {
           font-family: $fontF;
@@ -107,6 +144,7 @@ body {
           letter-spacing: -0.285714px;
           padding-left: 150px;
           padding-right: 150px;
+          margin-top: 162.5px;
         }
 
         p {
@@ -114,7 +152,7 @@ body {
           font-weight: 600;
           font-size: 18px;
           color: $grey;
-          width: 445px;
+          max-width: 445px;
           margin-left: 150px;
           margin-top: 32px;
           margin-bottom: 50px;
@@ -133,6 +171,7 @@ body {
           margin-left: 160px;
           position: relative;
           z-index: 1;
+          margin-bottom: 150px;
 
           &:hover span {
             opacity: 1;
@@ -154,6 +193,10 @@ body {
       grid-template-rows: 1fr;
       text-align: center;
       font-family: $fontF;
+
+      @media screen and(max-width: 870px) {
+        grid-template-columns: 1fr;
+      }
 
       h2 {
         font-weight: 900;
@@ -219,6 +262,10 @@ body {
         justify-content: center;
         gap: 30px;
 
+        @media screen and (max-width: 870px) {
+          display: block;
+        }
+
         li {
           text-align: center;
           img {
@@ -231,7 +278,11 @@ body {
             line-height: 32px;
             color: $greyS;
             margin-bottom: 69px;
-            width: 350px;
+            max-width: 350px;
+            @media screen and (max-width: 870px) {
+              margin-left: auto;
+              margin-right: auto;
+            }
           }
           .name {
             font-family: $fontF;
@@ -256,12 +307,34 @@ body {
     .banner {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      height: 500px;
+
+      .milk {
+        background: url(../../images/Bitmap.png) center/cover;
+      }
+
+      .orange {
+        background: url(../../images/Bitmap\(1\).png) center/cover;
+      }
+
+      .icecream {
+        background: url(../../images/Bitmap\(2\).png) center/cover;
+      }
+
+      .sugar {
+        background: url(../../images/Bitmap\(3\).png) center/cover;
+      }
+
+      @media screen and (max-width: 870px) {
+        grid-template-columns: 1fr 1fr;
+      }
     }
   }
   footer {
     text-align: center;
     background-color: $green;
     padding-bottom: 72px;
+
     img {
       margin-top: 72px;
       height: 33px;
