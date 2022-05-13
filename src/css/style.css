@@ -12,6 +12,7 @@ body {
 body header {
   background: url("../../images/mae-mu-1APtYqzNajA-unsplash.png") center/cover;
   height: 800px;
+  width: 1440px;
 }
 body header nav {
   display: -webkit-box;
@@ -23,6 +24,12 @@ body header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+body header nav .menu_burger i {
+  font-size: 24px;
+  color: #ffffff;
+  display: none;
+  margin-right: 32px;
 }
 body header nav img {
   height: 33px;

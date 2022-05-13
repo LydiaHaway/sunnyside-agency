@@ -7,13 +7,24 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
+
   header {
     background: url("../../images/mae-mu-1APtYqzNajA-unsplash.png") center/cover;
     height: 800px;
+    width: 1440px;
+
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .menu_burger {
+        i {
+          font-size: 24px;
+          color: $white;
+          display: none;
+          margin-right: 32px;
+        }
+      }
       img {
         height: 33px;
         padding-left: 30px;
@@ -24,6 +35,7 @@ body {
         gap: 30px;
         padding: 30px;
         margin: 20px;
+
         li {
           a {
             text-decoration: none;
@@ -206,6 +218,7 @@ body {
         display: flex;
         justify-content: center;
         gap: 30px;
+
         li {
           text-align: center;
           img {
