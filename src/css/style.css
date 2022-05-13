@@ -257,4 +257,67 @@ body main .testimony ul li .name {
   line-height: 22.19px;
   color: rgb(36, 48, 62);
   margin-bottom: 9px;
+}
+body main .testimony ul li .title {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.1px;
+  color: rgb(167, 170, 173);
+  margin-bottom: 139px;
+}
+body main .banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+body footer {
+  text-align: center;
+  background-color: rgb(144, 212, 198);
+  padding-bottom: 72px;
+}
+body footer img {
+  margin-top: 72px;
+  height: 33px;
+}
+body footer .footer_menu ul {
+  list-style: none;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 57px;
+}
+body footer .footer_menu ul li a {
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.13px;
+  color: rgb(69, 141, 126);
+}
+body footer .footer_menu ul li a:hover {
+  color: #ffffff;
+}
+body footer .menu_socialMedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 28px;
+  margin-top: 88px;
+  list-style: none;
+}
+body footer .menu_socialMedia ul li a i {
+  color: rgb(44, 117, 102);
+  height: 20px;
+}
+body footer .menu_socialMedia ul li a:hover i {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

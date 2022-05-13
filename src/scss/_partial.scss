@@ -10,8 +10,13 @@ $blueT: rgba(5, 44, 59, 1);
 $blueTp: rgba(25, 83, 108, 1);
 $greydark: rgba(167, 170, 173, 1);
 $greyS: rgba(91, 99, 109, 1);
+$greyT: rgba(167, 170, 173, 1);
+$green: rgba(144, 212, 198, 1);
+$greenF: rgba(69, 141, 126, 1);
+$greenL: rgba(44, 117, 102, 1);
 
 $fontF: "Fraunces", serif;
+$fontB: "Barlow", sans-serif;
 
 @mixin link_color($color) {
   height: 5px;
