@@ -84,7 +84,7 @@ body header {
 body header .menu-burger-nav {
   background-color: #ffffff;
   width: 329px;
-  padding-top: 90px;
+  padding-top: 55px;
   position: absolute;
   top: 100px;
   right: 40px;
@@ -96,13 +96,14 @@ body header .menu-burger-nav ul {
   list-style: none;
 }
 body header .menu-burger-nav ul li {
-  padding: 5px;
   text-align: center;
-  padding-top: 39px;
+  padding-top: 32px;
 }
 body header .menu-burger-nav ul li a {
   text-decoration: none;
-  color: rgb(91, 99, 109);
+  color: rgb(167, 170, 173);
+  font-size: 20px;
+  font-weight: 600;
   font-family: "Barlow", sans-serif;
   display: inline-block;
   margin-left: auto;
@@ -118,7 +119,7 @@ body header .menu-burger-nav ul .menu-contact-burger a {
   font-size: 15px;
   line-height: 25px;
   text-transform: uppercase;
-  margin-bottom: 54px;
+  margin-bottom: 40px;
 }
 body header .active {
   display: block;
