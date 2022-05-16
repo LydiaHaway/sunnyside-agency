@@ -4,20 +4,20 @@
             filter: brightness(100%);
   }
   25% {
-    -webkit-filter: brightness(120%);
-            filter: brightness(120%);
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
   }
   50% {
-    -webkit-filter: brightness(140%);
-            filter: brightness(140%);
-  }
-  75% {
-    -webkit-filter: brightness(130%);
-            filter: brightness(130%);
-  }
-  100% {
     -webkit-filter: brightness(120%);
             filter: brightness(120%);
+  }
+  75% {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+  }
+  100% {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
   }
 }
 @keyframes animation_testimony {
@@ -26,20 +26,20 @@
             filter: brightness(100%);
   }
   25% {
-    -webkit-filter: brightness(120%);
-            filter: brightness(120%);
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
   }
   50% {
-    -webkit-filter: brightness(140%);
-            filter: brightness(140%);
-  }
-  75% {
-    -webkit-filter: brightness(130%);
-            filter: brightness(130%);
-  }
-  100% {
     -webkit-filter: brightness(120%);
             filter: brightness(120%);
+  }
+  75% {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+  }
+  100% {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
   }
 }
 @-webkit-keyframes color_testimony {
