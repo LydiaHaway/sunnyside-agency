@@ -1,3 +1,71 @@
+@-webkit-keyframes animation_testimony {
+  0% {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+  25% {
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%);
+  }
+  50% {
+    -webkit-filter: brightness(140%);
+            filter: brightness(140%);
+  }
+  75% {
+    -webkit-filter: brightness(130%);
+            filter: brightness(130%);
+  }
+  100% {
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%);
+  }
+}
+@keyframes animation_testimony {
+  0% {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+  25% {
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%);
+  }
+  50% {
+    -webkit-filter: brightness(140%);
+            filter: brightness(140%);
+  }
+  75% {
+    -webkit-filter: brightness(130%);
+            filter: brightness(130%);
+  }
+  100% {
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%);
+  }
+}
+@-webkit-keyframes color_testimony {
+  to {
+    background: linear-gradient(143deg, rgb(254, 117, 101), rgb(247, 211, 4));
+    -webkit-box-shadow: -1px 1px 21px 3px rgb(254, 117, 101);
+            box-shadow: -1px 1px 21px 3px rgb(254, 117, 101);
+  }
+  from {
+    background: linear-gradient(139deg, rgb(247, 212, 0), rgb(130, 213, 197));
+    -webkit-box-shadow: -1px 1px 21px 3px rgba(247, 212, 0, 0.59);
+            box-shadow: -1px 1px 21px 3px rgba(247, 212, 0, 0.59);
+  }
+}
+@keyframes color_testimony {
+  to {
+    background: linear-gradient(143deg, rgb(254, 117, 101), rgb(247, 211, 4));
+    -webkit-box-shadow: -1px 1px 21px 3px rgb(254, 117, 101);
+            box-shadow: -1px 1px 21px 3px rgb(254, 117, 101);
+  }
+  from {
+    background: linear-gradient(139deg, rgb(247, 212, 0), rgb(130, 213, 197));
+    -webkit-box-shadow: -1px 1px 21px 3px rgba(247, 212, 0, 0.59);
+            box-shadow: -1px 1px 21px 3px rgba(247, 212, 0, 0.59);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -364,8 +432,21 @@ body main .testimony ul {
 body main .testimony ul li {
   text-align: center;
 }
+body main .testimony ul li:hover {
+  background: linear-gradient(143deg, rgb(254, 117, 101), rgb(247, 211, 4));
+  -webkit-box-shadow: -1px 1px 21px 3px rgba(247, 211, 4, 0.59);
+          box-shadow: -1px 1px 21px 3px rgba(247, 211, 4, 0.59);
+  border-radius: 5px;
+  padding-top: 10px;
+  -webkit-animation: color_testimony 2s linear infinite;
+          animation: color_testimony 2s linear infinite;
+}
 body main .testimony ul li img {
   margin-bottom: 58px;
+}
+body main .testimony ul li img:hover {
+  -webkit-animation: animation_testimony 2s linear infinite;
+          animation: animation_testimony 2s linear infinite;
 }
 body main .testimony ul li .story {
   font-family: "Barlow", sans-serif;
