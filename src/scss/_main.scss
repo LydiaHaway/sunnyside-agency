@@ -50,19 +50,19 @@ body {
     .menu-burger-nav {
       background-color: $white;
       width: 329px;
-      height: 450px;
+      padding-top: 90px;
       position: absolute;
       top: 100px;
       right: 40px;
       display: none;
       clip-path: polygon(
-        0% 0%,
+        0 100%,
+        100% 100%,
+        100% 13%,
+        100% 13%,
         100% 0,
-        100% 75%,
-        64% 74%,
-        63% 84%,
-        50% 75%,
-        0% 75%
+        88% 13%,
+        0 13%
       );
 
       ul {

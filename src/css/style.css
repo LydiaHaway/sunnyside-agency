@@ -84,13 +84,13 @@ body header {
 body header .menu-burger-nav {
   background-color: #ffffff;
   width: 329px;
-  height: 450px;
+  padding-top: 90px;
   position: absolute;
   top: 100px;
   right: 40px;
   display: none;
-  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 75%, 64% 74%, 63% 84%, 50% 75%, 0% 75%);
-          clip-path: polygon(0% 0%, 100% 0, 100% 75%, 64% 74%, 63% 84%, 50% 75%, 0% 75%);
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 13%, 100% 13%, 100% 0, 88% 13%, 0 13%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 13%, 100% 13%, 100% 0, 88% 13%, 0 13%);
 }
 body header .menu-burger-nav ul {
   list-style: none;
