@@ -438,15 +438,27 @@ body main .testimony ul li:hover {
           box-shadow: -1px 1px 21px 3px rgba(247, 211, 4, 0.59);
   border-radius: 5px;
   padding-top: 10px;
-  -webkit-animation: color_testimony 2s linear infinite;
-          animation: color_testimony 2s linear infinite;
+  -webkit-animation-name: color_testimony;
+          animation-name: color_testimony;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 body main .testimony ul li img {
   margin-bottom: 58px;
 }
 body main .testimony ul li img:hover {
-  -webkit-animation: animation_testimony 2s linear infinite;
-          animation: animation_testimony 2s linear infinite;
+  -webkit-animation-name: animation_testimony;
+          animation-name: animation_testimony;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 body main .testimony ul li .story {
   font-family: "Barlow", sans-serif;

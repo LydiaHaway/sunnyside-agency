@@ -382,13 +382,19 @@ body {
             box-shadow: -1px 1px 21px 3px rgba(247, 211, 4, 0.59);
             border-radius: 5px;
             padding-top: 10px;
-            animation: color_testimony 2s linear infinite;
+            animation-name: color_testimony;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
           }
           img {
             margin-bottom: 58px;
 
             &:hover {
-              animation: animation_testimony 2s linear infinite;
+              animation-name: animation_testimony;
+              animation-duration: 1s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
             }
           }
           .story {
